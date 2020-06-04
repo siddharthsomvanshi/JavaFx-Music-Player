@@ -1,0 +1,237 @@
+/* this responsible for the look and feel of the application
+   modification makes imbalance in the application
+   last modified by S.somvanshi at 21 dec 2017 -- 10:30pm
+ */
+.list-view .list-cell:even{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.list-view .list-cell:odd{
+    -fx-background-color: greenyellow;
+    -fx-text-fill: black;
+}
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical
+{
+    -fx-background-color: transparent;
+}
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:vertical .increment-button{
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .decrement-button,
+.list-view .scroll-bar:vertical .decrement-button{
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track {
+    visibility: hidden;
+}
+.list-view .scroll-bar:horizontal .thumb,
+.list-view .scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    border-radius: 100px;
+}
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical
+{
+    -fx-background-color: transparent;
+}
+/*text area */
+.text-area .scroll-bar:horizontal .increment-button,
+.text-area .scroll-bar:vertical .increment-button{
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .decrement-button,
+.text-area .scroll-bar:vertical .decrement-button{
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .track,
+.text-area .scroll-bar:vertical .track {
+    visibility: hidden;
+}
+.text-area .scroll-bar:horizontal .thumb,
+.text-area .scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    border-radius: 100px;
+}
+
+@font-face {
+    -fx-font-family:seg;
+    -fx-src:url('res/default.ttf');
+}
+#back{
+    -fx-background-color:black;
+}
+#player{
+    -fx-background-color: transparent;
+}
+#statusbar{
+    -fx-background-color: white;
+}
+#webview:focused{
+    -fx-effect:dropshadow(two-pass-box,black,5,0,0,0);
+}
+#editortb{
+
+}
+#totaltime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#currenttime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#playlist{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.list-cell:even{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-family: seg;
+}
+.list-cell:odd{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-family: seg;
+}
+#artistn{
+    -fx-text-fill: white;
+    -fx-background-color: lightgray;
+    -fx-font-family: seg;
+    -fx-font-size: 20;
+    -fx-opacity:0.95;
+}
+#name{
+    -fx-text-fill: white;
+    -fx-background-color: lightgray;
+    -fx-font-family: seg;
+    -fx-opacity:0.95;
+    -fx-font-size:25;
+}
+#volumetxt{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: seg;
+    -fx-font-size: 12;
+}
+#playpause{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/pause.png");
+    -fx-background-size: contain;
+    -fx-min-height: 65;
+    -fx-min-width: 70;
+    -fx-border-radius: 32;
+    -fx-border-style: solid;
+    -fx-border-color: red;
+
+}
+#playpause:hover{
+    -fx-min-height: 66;
+    -fx-min-width: 71;
+    -fx-border-radius: 32;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+#previous{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/previous.png");
+    -fx-background-size: contain;
+    -fx-min-height: 55;
+    -fx-min-width: 58;
+    -fx-border-radius: 26;
+    -fx-border-style: solid;
+    -fx-border-color: red;
+}
+#previous:hover{
+    -fx-min-height: 56;
+    -fx-min-width: 58;
+    -fx-border-radius: 26;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+#next{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/next.png");
+    -fx-background-size: contain;
+    -fx-min-height: 50;
+    -fx-min-width: 53;
+    -fx-border-radius: 25;
+    -fx-border-style: solid;
+    -fx-border-color: red;
+}
+#next:hover{
+    -fx-min-height: 51;
+    -fx-min-width: 54;
+    -fx-border-radius: 25;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+}
+#close{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/close.png");
+    -fx-background-size: cover;
+    -fx-min-height: 20;
+    -fx-min-width: 10;
+}
+#close:hover{
+    -fx-min-height: 20;
+    -fx-min-width: 10;
+    -fx-background-color: white;
+}
+.slider .track{
+    -fx-background-color: white;
+    -fx-opacity: 0.3;
+}
+.slider .thumb{
+    -fx-background-color: white;
+    -fx-opacity: 0.5;
+}
+#hamburger{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/hamburger.png");
+    -fx-background-size: cover;
+}
+#hamburger:hover{
+    -fx-min-height: 20;
+    -fx-min-width: 10;
+    -fx-background-color: white;
+}
+#conback {
+    -fx-background-color: black;
+}
+#topbar{
+    -fx-background-color: black;
+}
+#playlist{
+    -fx-background-color: black;
+}
+#rootpane{
+    -fx-background-color: black;
+}
+#shufflebt{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/shuffle.png");
+    -fx-background-size: cover;
+    -fx-min-height: 20;
+    -fx-min-width: 25;
+}
+#shufflebt:hover{
+    -fx-min-height: 22;
+    -fx-min-width: 27;
+    -fx-background-color: grey;
+}
+#toggle{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/openDock.png");
+    -fx-background-size: cover;
+    -fx-min-height: 20;
+    -fx-min-width: 25;
+}
+#toggle:hover{
+    -fx-min-height: 22;
+    -fx-min-width: 27;
+    -fx-background-color: grey;
+}
